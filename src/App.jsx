@@ -8,9 +8,10 @@ import DocumentForm32 from "./components/Forms/DocumentForm32";
 import DocumentForm41 from "./components/Forms/DocumentForm41";
 import DocumentForm42 from "./components/Forms/DocumentForm42";
 import NotFound from "./pages/NotFound";
-import Pages from "./pages/Pages";
+
 
 function App() {
+
 
 
   return (
@@ -21,18 +22,14 @@ function App() {
 
         {/* Routes with layout */}
         <Route element={<Layout />}>
-          <Route path="/" element={<Pages><DocumentForm1 /></Pages>} />
-          <Route path="/document-form-1" element={<Pages><DocumentForm1 /></Pages>} />
-          <Route path="/document-form-2-1" element={<Pages><DocumentForm21 /></Pages>} />
-          <Route path="/document-form-2-2" element={<Pages><DocumentForm22 /></Pages>} />
-          <Route path="/document-form-3-1" element={<Pages><DocumentForm31 /></Pages>} />
-          <Route path="/document-form-3-2" element={<Pages><DocumentForm32 /></Pages>} />
-          <Route path="/document-form-4-1" element={<Pages><DocumentForm41 /></Pages>} />
-          <Route path="/document-form-4-2" element={<Pages><DocumentForm42 /></Pages>} />
-
-
-
-          {/* Add more routes as needed */}
+          <Route path="/" element={<DocumentForm1 />} />
+          <Route path="/document-form-1" element={<DocumentForm1 />} />
+          <Route path="/document-form-2-1" element={<DocumentForm21 />} />
+          <Route path="/document-form-2-2" element={<DocumentForm22 />} />
+          <Route path="/document-form-3-1" element={<DocumentForm31 />} />
+          <Route path="/document-form-3-2" element={<DocumentForm32 />} />
+          <Route path="/document-form-4-1" element={<DocumentForm41 />} />
+          <Route path="/document-form-4-2" element={<DocumentForm42 />} />
         </Route>
       </Routes>
     </Router>
